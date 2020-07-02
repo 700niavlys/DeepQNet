@@ -1,3 +1,15 @@
+'''
+振羽不为伍 身疲犹不栖 崇峰饮清露
+追月天涯 寂寞辰空舞
+==========================================================================================
+@author: Xuan ZHU
+@license: Institute of Automation，Chinese Academy of Sciences
+@contact: xuan.zhu.007@gmail.com
+@file: DDQN.py
+@time: 07/02/2020
+@desc：       
+               
+'''
 class DoubleDQN:
   def learn(self):
     ##same with DQN:
