@@ -42,7 +42,7 @@ class DoubleDQN:
     q_target[batch_index, eval_act_index] = reward + self.gamma * selected_q_next
     
     ##same with DQN:
-    _, slef.cost = self.sess.run([self._train_op, self.loss],feed_dict = {self.s: batch_memory[:, :self.n_features],self.q_target:q_target})
+    _, self.cost = self.sess.run([self._train_op, self.loss],feed_dict = {self.s: batch_memory[:, :self.n_features],self.q_target:q_target})
     self.cost_his.append(self.cost)
     self.epsilon = self.epsilon + self.epsilon_increment if self.epsilon < self.epsilon_max else self.epsilon_max
     self.learn_step_counter += 1
